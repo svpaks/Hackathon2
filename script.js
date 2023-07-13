@@ -82,7 +82,7 @@ function firstLoad() {
 function loadList() {
     apiGet(
     "radius",
-    `radius=1000&limit=${pageLength}&offset=${offset}&lon=${lon}&lat=${lat}&rate=2&format=json`
+    `radius=10000&limit=${pageLength}&offset=${offset}&lon=${lon}&lat=${lat}&rate=2&format=json`
     ).then(function(data) {
     let list = document.getElementById("list");
     list.innerHTML = "";
